@@ -12,13 +12,17 @@ const Hero = () => {
                         favorite cities and always be <br />
                         aware of the weather.
                     </p>
-                    <p>
+                    <div className='divider'></div>
+                    <p className='hero-date'>
                         April 2026 <br />
-                        Sunday, 5th
+                        Sunday, 5<sup>th</sup>
                     </p>
                 </div>
-                <input type="text" name="" id="" value="Search location..." />
-                <button className='search-btn'><img src={search} alt="" /></button>
+                <div className='search-container'>
+                    <input type="text" name="" id="" value="Search location..." />
+                    <button className='search-btn'><img src={search} alt="" /></button>
+                </div>
+                
             </div>
         </>
     )

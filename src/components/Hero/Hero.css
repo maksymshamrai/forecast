@@ -2,6 +2,13 @@
     background-image: url('/src/assets/hero.png');
     height: 595px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 h1 {
     font-family: Montserrat;
@@ -12,38 +19,77 @@ h1 {
     letter-spacing: 0%;
     color: #FFFFFF;
 }
-p {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: right;
-    color: #FFFFFF;
-}
-.hero-txt {
-    border-right: 3px solid #FFFFFF;
-}
+/* Загальні стилі для контейнера */
 .txt-container {
     display: flex;
-    width: 613px;
+    align-items: center; /* Центрує елементи вертикально відносно лінії */
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 30px;
+}
+
+/* Спільні стилі для тексту */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2; /* Збільшено для кращого вигляду */
+    color: #FFFFFF;
+    margin: 0; /* Прибираємо стандартні відступи */
+}
+
+/* Ліва частина (текст) */
+.hero-txt {
+    padding-right: 30px;
+    text-align: right; /* Вирівнювання до лінії */
+    max-width: 400px;  /* Щоб текст переносився як на фото */
+}
+
+/* Розділювач */
+.divider {
+    background-color: #FFFFFF;
     height: 144px;
+    width: 3px;
+    flex-shrink: 0; /* Щоб лінія не стискалася */
+}
+
+/* Права частина (дата) */
+.hero-date {
+    padding-left: 30px;
+    text-align: left; /* ВАЖЛИВО: вирівнювання від лінії вправо */
+}
+
+/* Стиль для маленьких літер "th" */
+sup {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+.search-container {
+    width: 625px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
 }
 input {
-    width: 625px;
-    height: 45px;
+    flex: 1;
+    height: 35px;
     padding: 5px 8px;
     background-color: #D9D9D9;
     color: #878787;
     border: none;
-    border-radius: 10px;
+    outline: none;
 }
 .search-btn {
-    width: 50px;
-    height: 50px;
-    background-color: #FFB36C;
+    background-color: #ffb37e;
     border: none;
-    border-left: 2px solid #000000;
-    border-radius: 10px;
+    border-left: 2px solid #000; 
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
 }

@@ -22,7 +22,9 @@ header {
     border-radius: 10px;
     border: none;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    font-weight: 500;
     background-color: #FFB36C;
     margin-top: 7px;
 }
