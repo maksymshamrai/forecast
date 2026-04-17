@@ -1,0 +1,112 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.card {
+    width: 320px;
+    height: 430px;
+    border-radius: 20px;
+    background-color: #E8E8E8;
+    padding: 15px 20px;
+}
+.place {
+    display: flex;
+    justify-content: space-between;
+}
+.city, .country {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.time {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+.forecast-type {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+.forecast-type-btn {
+    width: 114px;
+    height: 28px;
+    background-color: #FFB36C;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 15px;
+}
+.full-date, .day {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.full-date {
+    padding-right: 13px;
+    border-right: 1px solid #000000;
+}
+.weather-image {
+    margin: 0 auto;
+    padding: 0 100px;
+}
+.temp {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+.btn-container {
+    display: flex;
+    gap: 39px;
+}
+.refresh-btn, .like-btn, .delete-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+.see-more-btn {
+    width: 99px;
+    height: 28px;
+    background-color: #FFB36C;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+}
