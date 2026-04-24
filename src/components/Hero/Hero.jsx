@@ -1,7 +1,17 @@
+import { useState } from 'react';
 import search from '../../assets/search.svg'
 import './Hero.css'
 
-const Hero = () => {
+const Hero = ({onSearch}) => {
+    const [input, setInput] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!input.trim()) return;
+
+        onSearch(input);
+        setInput("");
+    };
     return (
         <>
             <div className='hero'>
@@ -18,10 +28,15 @@ const Hero = () => {
                         Sunday, 5<sup>th</sup>
                     </p>
                 </div>
-                <div className='search-container'>
-                    <input type="text" name="" id="" value="Search location..." />
+                <form className='search-container' onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Search location..."
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                    />
                     <button className='search-btn'><img src={search} alt="" /></button>
-                </div>
+                </form>
                 
             </div>
         </>
