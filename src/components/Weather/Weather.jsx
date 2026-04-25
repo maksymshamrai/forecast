@@ -33,7 +33,9 @@ const Weather = ({ city, onDelete }) => {
     fetchWeather();
   }, [city]);
 
-  if (!weather) return <p>Loading...</p>
+  if (!weather) {
+    return null;
+  }
 
   const localTime = new Date(
     weather.dt * 1000 + weather.timezone * 1000
@@ -53,7 +55,6 @@ const Weather = ({ city, onDelete }) => {
   
     return (
         <>
-            <div className="weather">
                 <div className="card">
                     <div className="place">
                         <p className="city">{weather.name}</p>
@@ -77,7 +78,6 @@ const Weather = ({ city, onDelete }) => {
                         <button className="delete-btn" onClick={() => onDelete(city)}><img src={deleteIcon} alt="" /></button>
                     </div>
                 </div>
-            </div>
         </>
     );
 }
