@@ -105,4 +105,92 @@
     font-family: Montserrat;
     font-size: 10px;
     font-weight: 500;
+    cursor: pointer;
+}
+.details {
+    width: 986px;
+    height: 474px;
+    margin: 80px auto;
+    padding: 40px 77px;
+    border-radius: 20px;
+    background-color: #E8E8E8;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.details-card {
+    width: 250px;
+    height: 177px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.details-card p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.details-data {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+#temp {
+    margin-bottom: 10px;
+}
+.weekly {
+    width: 986px;
+    height: 324px;
+    margin: 80px auto;
+    padding: 40px 77px;
+    border-radius: 20px;
+    background-color: #E8E8E8;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.weekly h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.day-card {
+    width: 886px;
+    height: 19px;
+    padding: 14px 50px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+.day-card p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-top: 2px;
+}
+.icon-temp {
+    display: flex;
 }

@@ -1,0 +1,21 @@
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+.gallery-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 80px;
+}
+.gallery-image {
+    width: 310px;
+    height: 170px;
+}

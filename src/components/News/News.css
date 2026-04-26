@@ -1,0 +1,51 @@
+.news-container h2 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.news {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px;
+}
+.news-card {
+    width: 270;
+    height: 268;
+}
+.news-card img {
+    width: 270px;
+    height: 208px;
+    border-radius: 10px;
+}
+.news-card h3 {
+    width: 270px;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.more-news-btn {
+    width: 138px;
+    height: 40px;
+    background-color: #FFB36C;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}

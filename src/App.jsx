@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Weather from './components/Weather/Weather'
+import WeatherDetails from './components/Weather/WeatherDetails'
+import WeeklyForecast from './components/Weather/WeeklyForecast'
+import News from './components/News/News'
+import Gallery from './components/Gallery/Gallery'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {
@@ -9,6 +14,8 @@ function App() {
     const saved = localStorage.getItem("cities");
     return saved ? JSON.parse(saved) : ["Warsaw"];
   });
+  const [selectedCity, setSelectedCity] = useState(null);
+  const [view, setView] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("cities", JSON.stringify(cities));
@@ -38,10 +45,31 @@ function App() {
           <Weather
             key={city}
             city={city}
+            onOpenWeekly={(city) => {
+              setSelectedCity(city);
+              setView("weekly");
+            }}
+            onOpenDetails={(city) => {
+              setSelectedCity(city);
+              setView("details");
+            }}
             onDelete={removeCity}
           />
         ))}
       </div>
+      <div>
+        {selectedCity && (
+          <WeatherDetails city={selectedCity} />
+        )}
+      </div>
+      <div>
+        {selectedCity && (
+          <WeeklyForecast city={selectedCity} />
+        )}
+      </div>
+      <News />
+      <Gallery />
+      <Footer />
     </>
   );
 }

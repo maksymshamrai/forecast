@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    gap: 103px;
+    background-color: #FFB36C;
+    padding: 60px 40px;
+}
+.logo {
+    width: 90px;
+    height: 62px;
+}
+.address {
+    width: 92px;
+    height: 75px;
+}
+.address h3 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.address p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.contact {
+    width: 160px;
+    height: 70px;
+}
+.contact h3 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.contact-list {
+    display: flex;
+    gap: 20px;
+}
+.contact-list img {
+    width: 40px;
+    height: 40px;
+}
